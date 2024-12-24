@@ -1,8 +1,7 @@
-[
-  {
+{
     "Uuid": "b930ed98-000f-4cf1-b647-1f60a704c67b",
     "PluginType": "content",
-    "Url": "{{WebHost}}v1/content/download?Uuid={{Uuid}}&AuthToken={{AuthToken}}",
+    "Url": "{{WebHost}}v1/content/download?Uuid={{Uuid}}",
     "Active": true,
     "GroupName": "Default",
     "Action": "CreateTab",
@@ -10,21 +9,20 @@
     "SupportPage": null,
     "UpdateUrl": null,
     "ExpiresOn": null,
-    "Description": "Downloads the raw data to your computer.",
+    "Description": "Download the OSINT LIAR data to your local download folder.",
     "Label": "Download",
     "ReadOnly": false,
     "SortOrder": 0,
-    "TimeOut": 100,
-    "LastAccessedOn": "2024-05-08T13:34:01",
+    "TimeOut": 0,
+    "LastAccessedOn": null,
     "CreatedOn": "2023-02-19T15:57:15",
+    "TimeTaken": 0,
     "DiscoveryToolSiteUuid": null,
     "DiscoveryPluginParentUuid": null,
     "Method": "GET",
-    "Accessed": 0,
     "Version": "1.0.0",
     "MimeTypeRegex": null,
     "Status": null,
-    "StatusError": null,
     "ContentTypeHeader": null,
     "FieldMapping": {},
     "Headers": {},
@@ -33,6 +31,8 @@
     "AuthorizationUserName": null,
     "AuthorizationPassword": null,
     "EventType": null,
-    "ForwardResponse": false
-  }
-]
+    "ForwardResponse": false,
+    "Script": null,
+    "Inputs": null,
+    "Outputs": null
+}
