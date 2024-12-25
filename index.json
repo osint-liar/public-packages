@@ -7,7 +7,7 @@
         "Description": null,
         "UpdatedOn": "2023-02-19T15:57:15",
         "Sha256": "155f45994a8732b5fc6ea36a4d83e627886190758e2a5f5f44a6877a26197fc2",
-        "Url": "https://github.com/osint-liar/discovery-plugins/blob/develop/discovery-plugins/defaults/browser-download.json",
+        "Url": "https://raw.githubusercontent.com/osint-liar/package-management/develop/discovery-plugins/defaults/browser-download.json",
         "Type": "DiscoveryPlugin"
     }
 ]
