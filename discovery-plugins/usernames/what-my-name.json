@@ -10,7 +10,7 @@
     "SupportPage": "https://whatsmyname.app/",
     "UpdateUrl": null,
     "ExpiresOn": null,
-    "Description": null,
+    "Description": "WhatMyName.app is a web-based tool designed to assist in digital investigations and OSINT (Open Source Intelligence) efforts by identifying usernames across various online platforms. It provides a user-friendly interface to search for a specific username and returns a comprehensive list of sites where that username is registered. This tool is invaluable for investigators, researchers, and cybersecurity professionals looking to track digital footprints, verify accounts, or uncover potential aliases. By aggregating data from a wide range of websites, WhatMyName.app simplifies the process of discovering a user's online presence.",
     "Label": "Whats My Name",
     "ReadOnly": false,
     "SortOrder": 0,
