@@ -1,4 +1,4 @@
-[
+
   {
     "Uuid": "911547db-5497-4e56-aa13-4590c276698f",
     "PluginType": "username",
@@ -35,4 +35,3 @@
     "EventType": null,
     "ForwardResponse": false
   }
-]

@@ -6,11 +6,16 @@ import os
 import json
 import hashlib
 from pathlib import Path
+from typing import List
 
 
-def calculate_sha256(file_path, fields_dict) -> str:
+
+
+def calculate_sha256(fields_dict) -> str:
     """Calculate SHA256 checksum of a file using specific fields from a dictionary."""
     sha256_hash = hashlib.sha256()
+    CHECKSUM_FIELDS: List[str] = ['Uuid', "Label", "Version", "Description", "UpdatedOn", "Script", "FieldMapping",
+                                  "Headers"]
 
     # Sort the keys for consistency and build a string of field values
     sorted_keys = sorted(fields_dict.keys())
@@ -24,63 +29,63 @@ def calculate_sha256(file_path, fields_dict) -> str:
 def process_json_files(directory, base_url):
     """Recursively find JSON files in a directory and generate index.json."""
     index = []
-    for root, _, files in os.walk(directory):
-        for file in files:
-            if file.endswith(".json"):
-                file_path = os.path.join(root, file)
+    files = list(Path(directory).rglob("*.json"))
+    for file in files:
+        if file.name == 'index.json':
+            continue
 
-                # Load JSON content
-                with open(file_path, "r", encoding="utf-8") as f:
-                    try:
-                        content = json.load(f)
-                    except json.JSONDecodeError:
-                        print(f"Skipping invalid JSON file: {file_path}")
-                        continue
+        # Load JSON content
+        with open(file, "r", encoding="utf-8") as f:
+            try:
+                content = json.load(f)
+            except json.JSONDecodeError:
+                print(f"Skipping invalid JSON file: {file}")
+                continue
 
-                # Extract required fields for use in the checksum and the package index
-                file_name = Path(file).stem
-                uuid = content[0].get("Uuid")
-                label = content[0].get("Label")
-                version = content[0].get("Version")
-                description = content[0].get("Description")
-                updated_on = content[0].get("UpdatedOn")
+        # Extract required fields for use in the checksum and the package index
+        file_name = Path(file).stem
+        uuid = content.get("Uuid")
+        label = content.get("Label")
+        version = content.get("Version")
+        description = content.get("Description")
+        updated_on = content.get("UpdatedOn")
 
-                script = content[0].get("Script")
-                field_mapping = content[0].get("FieldMapping")
-                headers = content[0].get("Headers")
+        script = content.get("Script")
+        field_mapping = content.get("FieldMapping")
+        headers = content.get("Headers")
 
-                # Prepare fields dictionary for checksum calculation
-                fields_dict = {
-                    "Uuid": uuid,
-                    "Label": label,
-                    "Version": version,
-                    "Description": description,
-                    "UpdatedOn": updated_on,
-                    "Script": script,
-                    "FieldMapping": field_mapping,
-                    "Headers": headers
-                }
+        # Prepare fields dictionary for checksum calculation
+        fields_dict = {
+            "Uuid": uuid,
+            "Label": label,
+            "Version": version,
+            "Description": description,
+            "UpdatedOn": updated_on,
+            "Script": script,
+            "FieldMapping": field_mapping,
+            "Headers": headers
+        }
 
-                sha256 = calculate_sha256(file_path, fields_dict)
-                # Build URL with the specified base_url
-                relative_path = os.path.relpath(file_path, directory).replace(os.sep, "/")
-                url = f"{base_url}/{relative_path}"
+        sha256 = calculate_sha256(fields_dict)
+        # Build URL with the specified base_url
+        relative_path = os.path.relpath(file, directory).replace(os.sep, "/")
+        url = f"{base_url}/{relative_path}"
 
-                # Add to index
-                # TODO compute type based on path of file
-                index.append({
-                    "Name": file_name,
-                    "Uuid": uuid,
-                    "Label": label,
-                    "Version": version,
-                    "Description": description,
-                    "UpdatedOn": updated_on,
-                    "Sha256": sha256,
-                    "Url": url,
-                    "Type": "DiscoveryPlugin"
-                })
-
+        # Add to index
+        # TODO compute type based on path of file
+        index.append({
+            "Name": file_name,
+            "Uuid": uuid,
+            "Label": label,
+            "Version": version,
+            "Description": description,
+            "UpdatedOn": updated_on,
+            "Sha256": sha256,
+            "Url": url,
+            "Type": "DiscoveryPlugin"
+        })
     return index
+
 
 
 def main():
