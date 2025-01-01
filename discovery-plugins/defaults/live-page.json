@@ -1,4 +1,4 @@
-[
+
   {
     "Uuid": "d5494302-6e73-4e34-9685-e2c12335cb72",
     "PluginType": "content",
@@ -35,4 +35,3 @@
     "EventType": null,
     "ForwardResponse": false
   }
-]
