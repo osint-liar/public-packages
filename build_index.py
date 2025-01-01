@@ -45,7 +45,7 @@ def process_json_files(directory, base_url):
         version = content.get("Version")
         description = content.get("Description")
         updated_on = content.get("UpdatedOn")
-        language = content.get("Language")
+        country = content.get("Country")
 
 
         script = content.get("Script")
@@ -63,7 +63,7 @@ def process_json_files(directory, base_url):
             "Script": script,
             "FieldMapping": field_mapping,
             "Headers": headers,
-            "Language": language,
+            "Country": country,
 
         }
 
@@ -84,7 +84,7 @@ def process_json_files(directory, base_url):
             "Sha256": sha256,
             "Url": url,
             "Type": "DiscoveryPlugin",
-            "Language": language,
+            "Country": country,
             "PaymentRequired": payment_required
         })
     return index

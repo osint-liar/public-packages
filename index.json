@@ -9,7 +9,7 @@
         "Sha256": "124e932551892eb725d12072d63d81286c4792eccda14211bf2a0a4de2f9cf06",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/defaults/browser-download.json",
         "Type": "DiscoveryPlugin",
-        "Language": "en",
+        "Country": "us",
         "PaymentRequired": false
     },
     {
@@ -22,7 +22,7 @@
         "Sha256": "aca5750e2c1ad0440008daf7738b9e7c8b555633a81b55a0b6da3f39b5ee070c",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/defaults/live-page.json",
         "Type": "DiscoveryPlugin",
-        "Language": "en",
+        "Country": "us",
         "PaymentRequired": false
     },
     {
@@ -35,7 +35,7 @@
         "Sha256": "5f6b903749a045cf437db79b334f5bd9044ad599e6b38040c67829cd484a4f76",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/forensics/cyber-chef.json",
         "Type": "DiscoveryPlugin",
-        "Language": "en",
+        "Country": "us",
         "PaymentRequired": false
     },
     {
@@ -48,7 +48,7 @@
         "Sha256": "19eea407e2aef928509e6caff4d10c7e5a0e8c589c59f9fa9296f6f6ac727f6d",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-text-username.json",
         "Type": "DiscoveryPlugin",
-        "Language": "en",
+        "Country": "us",
         "PaymentRequired": false
     },
     {
@@ -61,7 +61,7 @@
         "Sha256": "e5880e3c0b1b958a08db857944efe592fd0111b60a018264702bb1a66fa3a12d",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-title-username.json",
         "Type": "DiscoveryPlugin",
-        "Language": "en",
+        "Country": "us",
         "PaymentRequired": false
     },
     {
@@ -74,7 +74,7 @@
         "Sha256": "5c98175cc1e2be87d3758a7e32182e6daa3e3d13a3c4da8603fc1cee5d64ca20",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-url-username.json",
         "Type": "DiscoveryPlugin",
-        "Language": "en",
+        "Country": "us",
         "PaymentRequired": false
     },
     {
@@ -87,7 +87,7 @@
         "Sha256": "3e8b5762730ed606873fdaa92ed29d82778f2178cbc3ce1ef4cd0ad63c8a3932",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/usernames/whats-my-name.json",
         "Type": "DiscoveryPlugin",
-        "Language": "en",
+        "Country": "us",
         "PaymentRequired": false
     },
     {
@@ -100,7 +100,7 @@
         "Sha256": "0024105f48bfa4c905f7a09e426f7468cc7849dc7f53a402c85b5ae13b491cf9",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/usernames/who-am-i.json",
         "Type": "DiscoveryPlugin",
-        "Language": "en",
+        "Country": "us",
         "PaymentRequired": false
     }
 ]
