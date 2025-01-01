@@ -7,7 +7,7 @@
         "Description": "Download the OSINT LIAR data to your local download folder.",
         "UpdatedOn": null,
         "Sha256": "67a7505a996f6f82c7df163d9b423e41dc49e42d1c8e55118bc31b4c8593e473",
-        "Url": "https://osintliar.com//discovery-plugins/defaults/browser-download.json",
+        "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/defaults/browser-download.json",
         "Type": "DiscoveryPlugin"
     },
     {
@@ -18,7 +18,7 @@
         "Description": "Open a browser tab for the given URL",
         "UpdatedOn": null,
         "Sha256": "98919c766416aaa43e671208cc78587a75c21daed3baca41d1aa3ba1989fb472",
-        "Url": "https://osintliar.com//discovery-plugins/defaults/live-page.json",
+        "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/defaults/live-page.json",
         "Type": "DiscoveryPlugin"
     },
     {
@@ -29,7 +29,7 @@
         "Description": "The Cyber Swiss Army Knife\nCyberChef is a simple, intuitive web app for carrying out all manner of \"cyber\" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.\n\nThe tool is designed to enable both technical and non-technical analysts to manipulate data in complex ways without having to deal with complex tools or algorithms. It was conceived, designed, built and incrementally improved by an analyst in their 10% innovation time over several years.",
         "UpdatedOn": null,
         "Sha256": "409c7e4879ec3020a10c698be4ca5673bed61e2fb3bf5d9f7a9be54ba6e2b463",
-        "Url": "https://osintliar.com//discovery-plugins/forensics/cyber-chef.json",
+        "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/forensics/cyber-chef.json",
         "Type": "DiscoveryPlugin"
     },
     {
@@ -40,7 +40,7 @@
         "Description": "Google Search - InText - Username is essential for OSINT research as it allows investigators to find web pages where a specific username appears within the page's content. This search operator is invaluable for uncovering mentions in forums, comments, articles, or other text-heavy platforms. By pinpointing these references, researchers can gain deeper insights into a target's online presence, activities, and potential affiliations, making it a crucial tool for digital investigations.",
         "UpdatedOn": null,
         "Sha256": "caecd7a79b19b43ac4617ac3479be20c15471c804a07409b28efcda999a21891",
-        "Url": "https://osintliar.com//discovery-plugins/google/google-in-text-username.json",
+        "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-text-username.json",
         "Type": "DiscoveryPlugin"
     },
     {
@@ -51,7 +51,7 @@
         "Description": "Google Search - InTitle - Username is a powerful tool for OSINT research as it enables investigators to locate web pages where a specific username appears in the title. This search operator is particularly useful for identifying profiles, posts, and pages directly associated with a target username, offering insights into their online activity. By narrowing search results to relevant content, it helps researchers efficiently uncover connections and digital footprints.",
         "UpdatedOn": null,
         "Sha256": "1fcbb5141667fd91452cc3bb8a68d29e0c60e1871979828898dc289f0e6cabb1",
-        "Url": "https://osintliar.com//discovery-plugins/google/google-in-title-username.json",
+        "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-title-username.json",
         "Type": "DiscoveryPlugin"
     },
     {
@@ -62,7 +62,7 @@
         "Description": "Google InUrl Username is crucial for OSINT research as it allows investigators to locate web pages where a specific username appears within the URL. This technique helps uncover user profiles, forums, repositories, and other online platforms associated with the target username. By leveraging this search operator, researchers can efficiently map a subject's digital footprint, identify hidden accounts, and gather valuable intelligence for investigations.",
         "UpdatedOn": null,
         "Sha256": "fe866f5c92c6fa05cae8d01e1110939e73f85fd1486485e010475e65df13c8f5",
-        "Url": "https://osintliar.com//discovery-plugins/google/google-in-url-username.json",
+        "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-url-username.json",
         "Type": "DiscoveryPlugin"
     },
     {
@@ -73,7 +73,7 @@
         "Description": "WhatMyName.app is a web-based tool designed to assist in digital investigations and OSINT (Open Source Intelligence) efforts by identifying usernames across various online platforms. It provides a user-friendly interface to search for a specific username and returns a comprehensive list of sites where that username is registered. This tool is invaluable for investigators, researchers, and cybersecurity professionals looking to track digital footprints, verify accounts, or uncover potential aliases. By aggregating data from a wide range of websites, WhatMyName.app simplifies the process of discovering a user's online presence.",
         "UpdatedOn": null,
         "Sha256": "9b64565ff2fabbbd3599f494dc6e789e592962fb5226854fba6256209cdd9ce0",
-        "Url": "https://osintliar.com//discovery-plugins/usernames/whats-my-name.json",
+        "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/usernames/whats-my-name.json",
         "Type": "DiscoveryPlugin"
     },
     {
@@ -84,7 +84,7 @@
         "Description": "Who Am I is a Chrome extension designed for efficient username enumeration across multiple websites and social media platforms. Built for Open Source Intelligence (OSINT) investigations, it leverages datasets like WhatsMyName, Sherlock, and Mine Sight to quickly verify usernames with real-time feedback. With features like customizable searches, privacy-focused design, and an intuitive interface, Who Am I streamlines digital investigations, making it an essential tool for researchers, investigators, and professionals.",
         "UpdatedOn": null,
         "Sha256": "7e9d51087e1c7d3e2cc0ca2a2ce704ccd6da0aa061084327b63b0e6591e1d78a",
-        "Url": "https://osintliar.com//discovery-plugins/usernames/who-am-i.json",
+        "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/usernames/who-am-i.json",
         "Type": "DiscoveryPlugin"
     }
 ]

@@ -90,7 +90,7 @@ def process_json_files(directory, base_url):
 
 def main():
     input_directory = "./"
-    base_url = "https://osintliar.com/"
+    base_url = "https://raw.githubusercontent.com/osint-liar/public-packages/develop"
 
     # Process files and generate index
     index = process_json_files(input_directory, base_url)
