@@ -9,13 +9,9 @@ from pathlib import Path
 from typing import List
 
 
-
-
 def calculate_sha256(fields_dict) -> str:
     """Calculate SHA256 checksum of a file using specific fields from a dictionary."""
     sha256_hash = hashlib.sha256()
-    CHECKSUM_FIELDS: List[str] = ['Uuid', "Label", "Version", "Description", "UpdatedOn", "Script", "FieldMapping",
-                                  "Headers"]
 
     # Sort the keys for consistency and build a string of field values
     sorted_keys = sorted(fields_dict.keys())
@@ -49,10 +45,13 @@ def process_json_files(directory, base_url):
         version = content.get("Version")
         description = content.get("Description")
         updated_on = content.get("UpdatedOn")
+        language = content.get("Language")
+
 
         script = content.get("Script")
         field_mapping = content.get("FieldMapping")
         headers = content.get("Headers")
+        payment_required = content.get("PaymentRequired")
 
         # Prepare fields dictionary for checksum calculation
         fields_dict = {
@@ -63,7 +62,9 @@ def process_json_files(directory, base_url):
             "UpdatedOn": updated_on,
             "Script": script,
             "FieldMapping": field_mapping,
-            "Headers": headers
+            "Headers": headers,
+            "Language": language,
+
         }
 
         sha256 = calculate_sha256(fields_dict)
@@ -82,7 +83,9 @@ def process_json_files(directory, base_url):
             "UpdatedOn": updated_on,
             "Sha256": sha256,
             "Url": url,
-            "Type": "DiscoveryPlugin"
+            "Type": "DiscoveryPlugin",
+            "Language": language,
+            "PaymentRequired": payment_required
         })
     return index
 

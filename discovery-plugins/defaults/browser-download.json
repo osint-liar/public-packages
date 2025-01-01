@@ -35,5 +35,7 @@
     "Script": null,
     "Inputs": null,
     "Outputs": null,
-    "UpdatedOn": "2025-01-01T00:00:00.000"
+    "UpdatedOn": "2025-01-01T00:00:00.000",
+    "Language": "en",
+    "PaymentRequired": false
 }
