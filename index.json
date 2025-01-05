@@ -9,8 +9,7 @@
         "Sha256": "a88f23e7705e8dfb906ff300825317420a22a5d78f48162d0c7fd42d0beac59b",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/countries/us/michigan/lara-by-name.json",
         "Type": "DiscoveryPlugin",
-        "Country": null,
-        "PaymentRequired": null
+        "Country": null
     },
     {
         "Name": "browser-download",
@@ -22,8 +21,7 @@
         "Sha256": "36a98a17d168f63dec55fe97bb8e5ffac0c70139398cc67b02f25f7fdaf7a761",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/defaults/browser-download.json",
         "Type": "DiscoveryPlugin",
-        "Country": "us",
-        "PaymentRequired": null
+        "Country": "us"
     },
     {
         "Name": "live-page",
@@ -35,8 +33,7 @@
         "Sha256": "03482d5116ee12de3b2653fbe56df4230e5410ef3ff0df7c12211f4ed360c119",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/defaults/live-page.json",
         "Type": "DiscoveryPlugin",
-        "Country": "us",
-        "PaymentRequired": null
+        "Country": "us"
     },
     {
         "Name": "cyber-chef",
@@ -48,8 +45,7 @@
         "Sha256": "12f798d1f365681e8301ce0e78973a23663e5b666551012fb2b644e64f711809",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/forensics/cyber-chef.json",
         "Type": "DiscoveryPlugin",
-        "Country": "us",
-        "PaymentRequired": null
+        "Country": "us"
     },
     {
         "Name": "google-in-text-username",
@@ -61,8 +57,7 @@
         "Sha256": "21d48c0c1e4f901de9f84943ecd2d362253f2906822a8ab4dda6e9effb58e6e6",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-text-username.json",
         "Type": "DiscoveryPlugin",
-        "Country": "us",
-        "PaymentRequired": null
+        "Country": "us"
     },
     {
         "Name": "google-in-title-username",
@@ -74,8 +69,7 @@
         "Sha256": "9c52ba648424cce44a76aefb5569c6884ee4ada593e6251ab2ab7baa4c7c89ff",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-title-username.json",
         "Type": "DiscoveryPlugin",
-        "Country": "us",
-        "PaymentRequired": null
+        "Country": "us"
     },
     {
         "Name": "google-in-url-username",
@@ -87,8 +81,7 @@
         "Sha256": "9288fed69f02c3c7116a4108c3b3293e9d58f166427d57b6170e317156b21c68",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-url-username.json",
         "Type": "DiscoveryPlugin",
-        "Country": "us",
-        "PaymentRequired": null
+        "Country": "us"
     },
     {
         "Name": "whats-my-name",
@@ -100,8 +93,7 @@
         "Sha256": "fa8dfeacc4c22b7f5b4d69785b1835df4a8371fc969afe9930760ed820cb3cfe",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/usernames/whats-my-name.json",
         "Type": "DiscoveryPlugin",
-        "Country": "us",
-        "PaymentRequired": null
+        "Country": "us"
     },
     {
         "Name": "who-am-i",
@@ -113,7 +105,6 @@
         "Sha256": "d24c96c70144d8d1d4b25243a277e191bfc4aa4972ea4341ccf90d0d8c08449e",
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/usernames/who-am-i.json",
         "Type": "DiscoveryPlugin",
-        "Country": "us",
-        "PaymentRequired": null
+        "Country": "us"
     }
 ]

@@ -51,7 +51,6 @@ def process_json_files(directory, base_url):
         script = content.get("Script")
         field_mapping = content.get("FieldMapping")
         headers = content.get("Headers")
-        payment_required = content.get("PaymentRequired")
 
         # Prepare fields dictionary for checksum calculation
         fields_dict = {
@@ -84,8 +83,7 @@ def process_json_files(directory, base_url):
             "Sha256": sha256,
             "Url": url,
             "Type": "DiscoveryPlugin",
-            "Country": country,
-            "PaymentRequired": payment_required
+            "Country": country
         })
     return index
 
