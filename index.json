@@ -23,7 +23,7 @@
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/defaults/browser-download.json",
         "Type": "DiscoveryPlugin",
         "Country": "us",
-        "PaymentRequired": false
+        "PaymentRequired": null
     },
     {
         "Name": "live-page",
@@ -36,7 +36,7 @@
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/defaults/live-page.json",
         "Type": "DiscoveryPlugin",
         "Country": "us",
-        "PaymentRequired": false
+        "PaymentRequired": null
     },
     {
         "Name": "cyber-chef",
@@ -49,7 +49,7 @@
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/forensics/cyber-chef.json",
         "Type": "DiscoveryPlugin",
         "Country": "us",
-        "PaymentRequired": false
+        "PaymentRequired": null
     },
     {
         "Name": "google-in-text-username",
@@ -62,7 +62,7 @@
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-text-username.json",
         "Type": "DiscoveryPlugin",
         "Country": "us",
-        "PaymentRequired": false
+        "PaymentRequired": null
     },
     {
         "Name": "google-in-title-username",
@@ -75,7 +75,7 @@
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-title-username.json",
         "Type": "DiscoveryPlugin",
         "Country": "us",
-        "PaymentRequired": false
+        "PaymentRequired": null
     },
     {
         "Name": "google-in-url-username",
@@ -88,7 +88,7 @@
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/google/google-in-url-username.json",
         "Type": "DiscoveryPlugin",
         "Country": "us",
-        "PaymentRequired": false
+        "PaymentRequired": null
     },
     {
         "Name": "whats-my-name",
@@ -101,7 +101,7 @@
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/usernames/whats-my-name.json",
         "Type": "DiscoveryPlugin",
         "Country": "us",
-        "PaymentRequired": false
+        "PaymentRequired": null
     },
     {
         "Name": "who-am-i",
@@ -114,6 +114,6 @@
         "Url": "https://raw.githubusercontent.com/osint-liar/public-packages/develop/discovery-plugins/usernames/who-am-i.json",
         "Type": "DiscoveryPlugin",
         "Country": "us",
-        "PaymentRequired": false
+        "PaymentRequired": null
     }
 ]
