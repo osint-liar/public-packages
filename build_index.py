@@ -1,12 +1,11 @@
 """
 Builds the index.json from the OSINT LIAR discovery plugins included in this directory.
 """
-
+import datetime
 import os
 import json
 import hashlib
 from pathlib import Path
-from typing import List
 
 
 def calculate_sha256(fields_dict) -> str:
@@ -44,13 +43,10 @@ def process_json_files(directory, base_url):
         label = content.get("Label")
         version = content.get("Version")
         description = content.get("Description")
-        updated_on = content.get("UpdatedOn")
-        country = content.get("Country")
-
-
+        country = content.get("Country", "us")
         script = content.get("Script")
-        field_mapping = content.get("FieldMapping")
-        headers = content.get("Headers")
+        field_mapping = content.get("FieldMapping", dict())
+        headers = content.get("Headers", dict())
 
         # Prepare fields dictionary for checksum calculation
         fields_dict = {
@@ -58,7 +54,6 @@ def process_json_files(directory, base_url):
             "Label": label,
             "Version": version,
             "Description": description,
-            "UpdatedOn": updated_on,
             "Script": script,
             "FieldMapping": field_mapping,
             "Headers": headers,
@@ -79,7 +74,7 @@ def process_json_files(directory, base_url):
             "Label": label,
             "Version": version,
             "Description": description,
-            "UpdatedOn": updated_on,
+            "UpdatedOn": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
             "Sha256": sha256,
             "Url": url,
             "Type": "DiscoveryPlugin",
