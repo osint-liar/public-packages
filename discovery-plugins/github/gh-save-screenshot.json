@@ -1,0 +1,43 @@
+{
+  "Uuid": "550801c5-c1c9-46e8-8fb4-fa85eb4d39a8",
+  "PluginType": "event",
+  "Url": "https://api.github.com/repos/{{GITHUB_USER}}/{{GITHUB_REPO}}/contents/{{CaseManagementName}}/{{ContentUuid}}.png",
+  "Active": true,
+  "GroupName": "Github",
+  "Action": "BackgroundRunner",
+  "HomePage": null,
+  "SupportPage": null,
+  "UpdateUrl": null,
+  "ExpiresOn": null,
+  "Description": "Storing screenshots on GitHub during investigations offers enhanced version control, facilitating the tracking of changes over time and ensuring a robust audit trail. It also supports secure collaboration, allowing team members to access, share, and discuss investigative materials remotely, with stringent access controls to maintain data integrity and confidentiality. This makes GitHub a practical choice for organizing and safeguarding digital evidence efficiently.",
+  "Label": "Github - Screenshot",
+  "ReadOnly": false,
+  "SortOrder": 0,
+  "TimeOut": 100,
+  "LastAccessedOn": "2025-02-18T18:13:42.294",
+  "CreatedOn": "2025-02-18T11:34:22.12",
+  "TimeTaken": 0,
+  "DiscoveryToolSiteUuid": null,
+  "DiscoveryPluginParentUuid": null,
+  "Method": "PUT",
+  "Version": "0.0.1",
+  "MimeTypeRegex": null,
+  "Status": null,
+  "ContentTypeHeader": "application/json",
+  "FieldMapping": {
+    "content": "{{ContentScreenShotBase64}}",
+    "message": "{{ContentUrl}}"
+  },
+  "Headers": {
+    "X-GitHub-Api-Version": "2022-11-28",
+    "Accept": "application/vnd.github+json"
+  },
+  "Regex": null,
+  "AuthorizationBearerToken": "{{GITHUB_PAT}}",
+  "AuthorizationUserName": null,
+  "AuthorizationPassword": null,
+  "EventType": "PreContentCreate",
+  "ForwardResponse": false,
+  "Script": null,
+  "Inputs": null
+}
