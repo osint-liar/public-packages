@@ -1,7 +1,7 @@
 {
   "uuid": "41786f4f-1c9f-4988-82af-2907f592a787",
   "pluginType": "domain",
-  "url": "https://www.virustotal.com/gui/domain/{{PluginValue}}/detection",
+  "url": "https://www.virustotal.com/gui/domain/{{selectorValue}}/detection",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

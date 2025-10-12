@@ -1,7 +1,7 @@
 {
   "uuid": "c0f71563-fa10-41ce-af42-67ac40ef8deb",
   "pluginType": "phone",
-  "url": "https://www.ipqualityscore.com/phone-number-validator/lookup/US/{{PluginValue}}",
+  "url": "https://www.ipqualityscore.com/phone-number-validator/lookup/US/{{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

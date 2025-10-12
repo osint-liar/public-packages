@@ -1,7 +1,7 @@
 {
   "uuid": "911547db-5497-4e56-aa13-4590c276698f",
   "pluginType": "username",
-  "url": "https://whatsmyname.app/?q={{PluginValue}}",
+  "url": "https://whatsmyname.app/?q={{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

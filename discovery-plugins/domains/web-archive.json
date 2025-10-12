@@ -1,7 +1,7 @@
 {
   "uuid": "f31f59f5-8434-46c5-9282-314f1db7ea18",
   "pluginType": "domain",
-  "url": "https://web.archive.org/web/*/{{PluginValue}}",
+  "url": "https://web.archive.org/web/*/{{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

@@ -1,7 +1,7 @@
 {
   "uuid": "d5494302-6e73-4e34-9685-e2c12335cb72",
   "pluginType": "content",
-  "url": "{{ContentUrl}}",
+  "url": "{{url}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

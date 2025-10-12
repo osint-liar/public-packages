@@ -1,7 +1,7 @@
 {
   "uuid": "a9795af5-1b49-4c1e-977e-753fde93f189",
   "pluginType": "username",
-  "url": "chrome-extension://gdnhlhadhgnhaenfcphpeakdghkccfoo/search.html?username={{PluginValue}}",
+  "url": "chrome-extension://gdnhlhadhgnhaenfcphpeakdghkccfoo/search.html?username={{selectorValue}}",
   "active": true,
   "groupName": "Who Am I",
   "action": "CreateTab",

@@ -1,7 +1,7 @@
 {
   "uuid": "4ecf7a5d-5830-430f-b298-f6f01767d5a2",
   "pluginType": "domain",
-  "url": "https://urlscan.io/api/verdict/{{PluginValue}}",
+  "url": "https://urlscan.io/api/verdict/{{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

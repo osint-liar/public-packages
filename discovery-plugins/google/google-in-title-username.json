@@ -1,7 +1,7 @@
 {
   "uuid": "58170e92-9932-483a-a42f-7fc7ec0c0d7e",
   "pluginType": "username",
-  "url": "https://www.google.com/search?q=intext:{{PluginValue}}",
+  "url": "https://www.google.com/search?q=intext:{{selectorValue}}",
   "active": true,
   "groupName": "Google",
   "action": "CreateTab",

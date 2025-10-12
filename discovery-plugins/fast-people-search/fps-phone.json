@@ -1,7 +1,7 @@
 {
   "uuid": "5158bc32-702a-41ea-b0cb-9416b8c5cede",
   "pluginType": "phone",
-  "url": "https://www.fastpeoplesearch.com/{{PluginValue}}",
+  "url": "https://www.fastpeoplesearch.com/{{selectorValue}}",
   "active": true,
   "groupName": "Fast People Search",
   "action": "CreateTab",

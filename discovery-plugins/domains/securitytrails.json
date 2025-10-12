@@ -1,7 +1,7 @@
 {
   "uuid": "6899abe3-b770-44ed-bf9c-fa228a548090",
   "pluginType": "domain",
-  "url": "https://securitytrails.com/domain/{{PluginValue}}",
+  "url": "https://securitytrails.com/domain/{{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

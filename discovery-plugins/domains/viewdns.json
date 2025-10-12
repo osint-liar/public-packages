@@ -1,7 +1,7 @@
 {
   "uuid": "0377f286-482e-4a71-b5e1-ab9ebdd2220d",
   "pluginType": "domain",
-  "url": "https://viewdns.info/dnsreport/?domain={{PluginValue}}",
+  "url": "https://viewdns.info/dnsreport/?domain={{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

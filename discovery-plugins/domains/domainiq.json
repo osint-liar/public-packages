@@ -1,7 +1,7 @@
 {
   "uuid": "8f9142f2-953f-40ca-855d-3bf7e87e0f2e",
   "pluginType": "domain",
-  "url": "https://www.domainiq.com/snapshot_history?data={{PluginValue}}#{{PluginValue}}",
+  "url": "https://www.domainiq.com/snapshot_history?data={{selectorValue}}#{{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

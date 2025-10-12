@@ -1,7 +1,7 @@
 {
   "uuid": "1a3c5c09-daba-4676-a498-7e40949f765d",
   "pluginType": "domain",
-  "url": "https://www.shodan.io/search?query={{PluginValue}}",
+  "url": "https://www.shodan.io/search?query={{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

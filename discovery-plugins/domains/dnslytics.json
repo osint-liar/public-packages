@@ -1,7 +1,7 @@
 {
   "uuid": "7bf0f6b5-8283-485c-ac65-c3b4412c230d",
   "pluginType": "domain",
-  "url": "https://dnslytics.com/domain/{{PluginValue}}",
+  "url": "https://dnslytics.com/domain/{{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

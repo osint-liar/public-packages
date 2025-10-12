@@ -1,7 +1,7 @@
 {
   "uuid": "6e30c74e-80d7-440f-a138-7b0a62af9dc9",
   "pluginType": "domain",
-  "url": "https://whois.domaintools.com/{{PluginValue}}",
+  "url": "https://whois.domaintools.com/{{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

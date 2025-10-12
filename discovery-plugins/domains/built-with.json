@@ -1,7 +1,7 @@
 {
   "uuid": "afc1d028-1a77-4b67-9ab6-8df410c576eb",
   "pluginType": "domain",
-  "url": "https://builtwith.com/{{PluginValue}}",
+  "url": "https://builtwith.com/{{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

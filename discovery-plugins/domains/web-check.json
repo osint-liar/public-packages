@@ -1,7 +1,7 @@
 {
   "uuid": "4104a085-bb68-42af-a8d7-e1342c578720",
   "pluginType": "domain",
-  "url": "https://web-check.as93.net/check/https%3A%2F%2F{{PluginValue}}",
+  "url": "https://web-check.as93.net/check/https%3A%2F%2F{{selectorValue}}",
   "active": true,
   "groupName": "Domain Checker",
   "action": "CreateTab",

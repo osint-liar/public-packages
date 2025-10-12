@@ -1,7 +1,7 @@
 {
   "uuid": "b643f5b5-ef64-4dce-b165-77b8c0c4141d",
   "pluginType": "domain",
-  "url": "https://www.threatminer.org/domain.php?q={{PluginValue}}",
+  "url": "https://www.threatminer.org/domain.php?q={{selectorValue}}",
   "active": true,
   "groupName": "Default",
   "action": "CreateTab",

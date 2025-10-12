@@ -25,8 +25,8 @@
   "status": null,
   "contentTypeHeader": "application/json",
   "fieldMapping": {
-    "content": "{{ContentScreenShotBase64}}",
-    "message": "{{ContentUrl}}"
+    "content": "{{screenshot}}",
+    "message": "{{url}}"
   },
   "headers": {
     "xGithubApiVersion": "2022-11-28",
