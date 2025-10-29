@@ -39,26 +39,25 @@ def process_json_files(directory, base_url):
 
         # Extract required fields for use in the checksum and the package index
         file_name = Path(file).stem
-        uuid = content.get("Uuid")
-        label = content.get("Label")
-        version = content.get("Version")
-        description = content.get("Description")
-        country = content.get("Country", "us")
-        script = content.get("Script")
-        field_mapping = content.get("FieldMapping", dict())
-        headers = content.get("Headers", dict())
+        uuid = content.get("uuid")
+        label = content.get("label")
+        version = content.get("version")
+        description = content.get("description")
+        country = content.get("country", "us")
+        script = content.get("script")
+        field_mapping = content.get("fieldMapping", dict())
+        headers = content.get("headers", dict())
 
         # Prepare fields dictionary for checksum calculation
         fields_dict = {
-            "Uuid": uuid,
-            "Label": label,
-            "Version": version,
-            "Description": description,
-            "Script": script,
-            "FieldMapping": field_mapping,
-            "Headers": headers,
-            "Country": country,
-
+            "uuid": uuid,
+            "label": label,
+            "version": version,
+            "description": description,
+            "script": script,
+            "fieldMapping": field_mapping,
+            "headers": headers,
+            "country": country,
         }
 
         sha256 = calculate_sha256(fields_dict)
@@ -69,16 +68,16 @@ def process_json_files(directory, base_url):
         # Add to index
         # TODO compute type based on path of file
         index.append({
-            "Name": file_name,
-            "Uuid": uuid,
-            "Label": label,
-            "Version": version,
-            "Description": description,
-            "UpdatedOn": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
-            "Sha256": sha256,
-            "Url": url,
-            "Type": "DiscoveryPlugin",
-            "Country": country
+            "name": file_name,
+            "uuid": uuid,
+            "label": label,
+            "version": version,
+            "description": description,
+            "updatedOn": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+            "sha256": sha256,
+            "url": url,
+            "type": "DiscoveryPlugin",
+            "country": country
         })
     return index
 
@@ -97,7 +96,6 @@ def main():
         json.dump(index, f, indent=4)
 
     print(f"Index file created at: {output_file}")
-
 
 if __name__ == "__main__":
     main()
