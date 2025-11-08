@@ -1,5 +1,5 @@
 {
-  "uuid": "550801c5-c1c9-46e8-8fb4-fa85eb4d39a8",
+  "uuid": "550801c5-c1c9-46e8-8fb4-fa85eb4d39a9",
   "pluginType": "event",
   "url": "https://api.github.com/repos/{{GITHUB_USER}}/{{GITHUB_REPO}}/contents/default_case/{{uuid}}.mhtml",
   "active": true,
