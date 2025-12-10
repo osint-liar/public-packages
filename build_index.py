@@ -1,5 +1,5 @@
 """
-Builds the index.json from the OSINT LIAR discovery plugins included in this directory.
+Builds the index.json from the OSINT LIAR / Your Rapport discovery plugins included in this directory.
 """
 import datetime
 import os
@@ -39,6 +39,8 @@ def process_json_files(directory, base_url):
 
         # Extract required fields for use in the checksum and the package index
         file_name = Path(file).stem
+        action = content.get("action")
+        plugin_type = content.get("pluginType")
         uuid = content.get("uuid")
         label = content.get("label")
         version = content.get("version")
@@ -77,10 +79,11 @@ def process_json_files(directory, base_url):
             "sha256": sha256,
             "url": url,
             "type": "DiscoveryPlugin",
-            "country": country
+            "country": country,
+            "action": action,
+            "pluginType": plugin_type
         })
     return index
-
 
 
 def main():
@@ -96,6 +99,7 @@ def main():
         json.dump(index, f, indent=4)
 
     print(f"Index file created at: {output_file}")
+
 
 if __name__ == "__main__":
     main()
