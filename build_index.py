@@ -100,6 +100,12 @@ def main():
 
     print(f"Index file created at: {output_file}")
 
+    with open(output_file, 'rb', buffering=0) as f:
+        hash_value = hashlib.file_digest(f, 'sha256').hexdigest()
+        hash_output_file = os.path.join(input_directory, "index.json.hash")
+        with open(hash_output_file, "w", encoding="utf-8") as h:
+            h.write(hash_value)
+
 
 if __name__ == "__main__":
     main()
